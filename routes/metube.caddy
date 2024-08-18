@@ -1,0 +1,4 @@
+https://ytdl.{$HOST_URL}/ {
+  uri strip_prefix metube
+  reverse_proxy http://192.168.25.15:8081
+}
