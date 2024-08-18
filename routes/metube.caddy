@@ -1,4 +1,9 @@
-https://ytdl.{$HOST_URL}/ {
-  uri strip_prefix metube
+ytdl.{$HOST_URL} {
   reverse_proxy http://192.168.25.15:8081
+
+  rewrite /path /path/
+  handle_path /path/* {
+    rewrite * /socket.io{path}
+    reverse_proxy http://192.168.25.15:8081
+  }
 }
