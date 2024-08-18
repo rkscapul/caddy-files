@@ -10,7 +10,7 @@ This repository contains files for Caddy. SSL certificates will be managed by a 
 ### Set environment variables
 1. Create a `.env` file.
 2. Copy and paste the contents of `.env.sample` to `.env`. 
-3. Replace **REDACTED** with actual values.
+3. Place in the values per environment variables.
 4. Save.
 
 ### To start Caddy
