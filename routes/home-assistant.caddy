@@ -1,6 +1,3 @@
 hass.{$HOST_URL} {
-  proxy / {$IP_HOME_ASSISTANT} {
-    websocket
-    transparent
-  }
+  reverse_proxy {$IP_HOME_ASSISTANT}
 }
