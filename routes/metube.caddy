@@ -1,9 +1,9 @@
 ytdl.{$HOST_URL} {
-  reverse_proxy http://192.168.25.15:8081
+  reverse_proxy {$IP_METUBE}
 
   rewrite /path /path/
   handle_path /path/* {
     rewrite * /socket.io{path}
-    reverse_proxy http://192.168.25.15:8081
+    reverse_proxy {$IP_METUBE}
   }
 }
