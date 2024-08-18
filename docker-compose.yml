@@ -8,12 +8,12 @@ services:
       - "443:443/udp"
     volumes:
       - ./Caddyfile:/etc/caddy/Caddyfile
+      - ./routes:/etc/caddy/routes
       - ./site:/srv
       - caddy_data:/data
       - caddy_config:/config
-    environment:
-      - PORKBUN_API_KEY=REDACTED
-      - PORKBUN_SECRET_API_KEY=REDACTED
+    env_file:
+      - .env
 
 volumes:
   caddy_data:

@@ -1,0 +1,9 @@
+{
+  # acme_ca https://acme-staging-v02.api.letsencrypt.org/directory # Uncomment to enable LetsEncrypt Staging
+  acme_dns porkbun {
+    api_key {env.PORKBUN_API_KEY}
+    api_secret_key {env.PORKBUN_SECRET_API_KEY}
+  }
+}
+
+import /etc/caddy/routes/*.caddy
