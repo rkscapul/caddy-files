@@ -7,13 +7,19 @@ This repository contains files for Caddy. SSL certificates will be managed by a 
 
 **Note:** Commands below uses Docker Compose V2.
 
-### Start the container
+### Set environment variables
+1. Create a `.env` file.
+2. Copy and paste the contents of `.env.sample` to `.env`. 
+3. Replace **REDACTED** with actual values.
+4. Save.
+
+### To start Caddy
 ```
 cd ./caddy-files
 docker compose up -d
 ```
 
-### To stop the container
+### To stop Caddy
 ```
 docker compose down
 ```
