@@ -1,0 +1,7 @@
+network.{$HOST_URL} {
+  reverse_proxy {$IP_OMADA_SDN}
+}
+
+omada.{$HOST_URL} {
+  reverse_proxy {$IP_OMADA_SDN}
+}
