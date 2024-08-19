@@ -1,0 +1,11 @@
+music1.{$HOST_URL} {
+  reverse_proxy {$IP_NAVIDROME_1}
+}
+
+music2.{$HOST_URL} {
+  reverse_proxy {$IP_NAVIDROME_2}
+}
+
+music3.{$HOST_URL} {
+  reverse_proxy {$IP_NAVIDROME_3}
+}
