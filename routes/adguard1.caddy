@@ -1,3 +1,0 @@
-adg1.{$HOST_URL} {
-  reverse_proxy {$IP_ADGUARD_1}
-}
