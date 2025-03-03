@@ -1,5 +1,5 @@
-pve1.{$HOST_URL}, deepslate.pve.{$HOST_URL} {
-  reverse_proxy {$IP_PVE1} {
+{$PVE1_URL} {
+  reverse_proxy {$PVE1_IP} {
     lb_policy ip_hash     # Makes backend sticky based on client ip
     lb_try_duration 1s
     lb_try_interval 250ms
@@ -16,8 +16,8 @@ pve1.{$HOST_URL}, deepslate.pve.{$HOST_URL} {
   }
 }
 
-pve2.{$HOST_URL}, calcite.pve.{$HOST_URL} {
-  reverse_proxy {$IP_PVE2} {
+{$PVE2_URL} {
+  reverse_proxy {$PVE2_IP} {
     lb_policy ip_hash     # Makes backend sticky based on client ip
     lb_try_duration 1s
     lb_try_interval 250ms
@@ -34,8 +34,8 @@ pve2.{$HOST_URL}, calcite.pve.{$HOST_URL} {
   }
 }
 
-pve3.{$HOST_URL}, netherrack.pve.{$HOST_URL} {
-  reverse_proxy {$IP_PVE3} {
+{$PVE3_URL} {
+  reverse_proxy {$PVE3_IP} {
     lb_policy ip_hash     # Makes backend sticky based on client ip
     lb_try_duration 1s
     lb_try_interval 250ms

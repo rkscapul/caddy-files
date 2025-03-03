@@ -1,17 +1,8 @@
-network.{$HOST_URL} {
-  reverse_proxy {$IP_OMADA_SDN} {
+{$OMADA_SDN_URL} {
+  reverse_proxy {$OMADA_SDN_IP} {
     transport http {
       tls_insecure_skip_verify
     }
-    header_up Host "network.{$HOST_URL}:443"
-  }
-}
-
-omada.{$HOST_URL} {
-  reverse_proxy {$IP_OMADA_SDN} {
-    transport http {
-      tls_insecure_skip_verify
-    }
-    header_up Host "network.{$HOST_URL}:443"
+    header_up Host "{$OMADA_SDN_IP}:443"
   }
 }
