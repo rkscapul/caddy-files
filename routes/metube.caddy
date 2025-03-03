@@ -1,9 +1,9 @@
-ytdl.{$HOST_URL} {
-  reverse_proxy {$IP_METUBE}
+{$YTDL_URL} {
+  reverse_proxy {$YTDL_IP}
 
   rewrite /path /path/
   handle_path /path/* {
     rewrite * /socket.io{path}
-    reverse_proxy {$IP_METUBE}
+    reverse_proxy {$YTDL_IP}
   }
 }

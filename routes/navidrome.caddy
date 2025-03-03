@@ -1,11 +1,11 @@
-music1.{$HOST_URL} {
-  reverse_proxy {$IP_NAVIDROME_1}
+{$NAVIDROME_1_URL} {
+  reverse_proxy {$NAVIDROME_1_IP}
 }
 
-music2.{$HOST_URL} {
-  reverse_proxy {$IP_NAVIDROME_2}
+{$NAVIDROME_2_URL} {
+  reverse_proxy {$NAVIDROME_2_IP}
 }
 
-music3.{$HOST_URL} {
-  reverse_proxy {$IP_NAVIDROME_3}
+{$NAVIDROME_3_URL} {
+  reverse_proxy {$NAVIDROME_3_IP}
 }

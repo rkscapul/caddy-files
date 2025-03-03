@@ -1,11 +1,11 @@
-adg1.{$HOST_URL} {
-  reverse_proxy {$IP_ADGUARD_1}
+{$ADGUARD_1_URL} {
+  reverse_proxy {$ADGUARD_1_URL}
 }
 
-adg2.{$HOST_URL} {
-  reverse_proxy {$IP_ADGUARD_2}
+{$ADGUARD_2_URL} {
+  reverse_proxy {$ADGUARD_2_URL}
 }
 
-adg3.{$HOST_URL} {
-  reverse_proxy {$IP_ADGUARD_3}
+{$ADGUARD_3_URL} {
+  reverse_proxy {$ADGUARD_3_URL}
 }

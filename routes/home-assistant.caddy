@@ -1,3 +1,7 @@
-hass.{$HOST_URL} {
-  reverse_proxy {$IP_HOME_ASSISTANT}
+{$HOME_ASSISTANT_URL} {
+  reverse_proxy {$HOME_ASSISTANT_IP}
+}
+
+{$HOME_ASSISTANT_TEST_URL} {
+  reverse_proxy {$HOME_ASSISTANT_TEST_IP}
 }
