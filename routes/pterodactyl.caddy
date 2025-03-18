@@ -1,3 +1,0 @@
-pterodactyl.{$HOST_URL} {
-  reverse_proxy {$IP_PTERODACTYL}
-}
