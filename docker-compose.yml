@@ -1,6 +1,6 @@
 services:
   caddy:
-    image: caddy-porkbun:2.8.4
+    image: caddy-porkbun:2.9
     restart: unless-stopped
     ports:
       - "80:80"
