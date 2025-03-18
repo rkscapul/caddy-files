@@ -3,6 +3,6 @@
     transport http {
       tls_insecure_skip_verify
     }
-    header_up Host "{$OMADA_SDN_IP}:443"
+    header_up Host "{$OMADA_SDN_IP}"
   }
 }

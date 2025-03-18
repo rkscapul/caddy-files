@@ -1,4 +1,4 @@
-{$GETHOMEPAGE_URL}, ${HOST_URL} {
+{$GETHOMEPAGE_URL} {
   reverse_proxy {$GETHOMEPAGE_IP}
 }
 
